@@ -12,26 +12,23 @@ export function Header() {
   return (
     <View className="w-full h-full items-center flex flex-col">
       <View className="flex flex-col grow items-center justify-center">
-      <Logo2 />
-      <Logo />
-      <Text className="w-72 p-8 text-center text-white font-semibold uppercase">discover and explore tests in the laboratory
-      </Text>
+        <Logo2 />
+        <Logo />
+        <Text className="w-72 p-8 text-center text-white font-semibold uppercase">
+          discover and explore tests in the laboratory
+        </Text>
       </View>
 
       <TouchableOpacity
         activeOpacity={0.7}
-        className='flex flex-row h-16 border bg-black border-white rounded-2xl items-center justify-evenly w-64 mb-8'
-        onPress={() => navigate('home')}
+        className="flex flex-row h-16 border bg-black border-white rounded-2xl items-center justify-evenly w-72 mb-8"
+        onPress={() => navigate("home")}
       >
-        <Feather
-        name="chevrons-right"
-        color={colors.white}
-        size={32}
-        />
-        <Text className='text-white font-semibold text-base text-center uppercase'>
+        <Feather name="chevrons-right" color={colors.white} size={32} />
+        <Text className="text-white font-semibold text-base text-center uppercase">
           Getting Started
         </Text>
       </TouchableOpacity>
     </View>
-  )
+  );
 }

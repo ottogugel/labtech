@@ -7,11 +7,9 @@ A aplicação para um laboratório onde tem os pacientes que realizam suas consu
 - React Native
 - Typescript
 - Expo Bare Workflow
-- Native Base [https://docs.nativebase.io/install-expo]
-- Firebase
-- Firebase Auth
-- Firebase Firestore with Real Time updates
-- Phosphor Icons [https://phosphoricons.com/]
+- Tailwind CSS
+- Nativewind
+- Vector icons [https://oblador.github.io/react-native-vector-icons/]
 - And more...
 
 ## Funcionalidades

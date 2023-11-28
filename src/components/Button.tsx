@@ -1,23 +1,24 @@
 import { TouchableOpacity, View, Text } from "react-native";
-import { Feather, Entypo } from '@expo/vector-icons';
-import colors from "tailwindcss/colors";
-import { ElementType, ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface ButtonProps {
   text: string
   icon: ReactNode
+  styleProps?: string
 }
 
 
-export function Button({ text, icon } : ButtonProps ) {
+export function Button({ text, icon, styleProps } : ButtonProps ) {
   return (
     <View>
       <TouchableOpacity
         activeOpacity={0.7}
-        className='flex flex-row h-16 border bg-blue-400 border-white rounded-2xl items-center justify-evenly w-64 mb-6'
+        className={`flex flex-row h-16 border border-white rounded-2xl items-center w-72 mb-6 ${styleProps}`}
       >
+      <View className="flex justify-center p-4">
       {icon}
-      <Text className="text-white font-semibold text-base text-center uppercase">
+      </View>
+      <Text className="text-white font-semibold flex-wrap max-w-sm uppercase ">
         {text}
       </Text>
       </TouchableOpacity>
