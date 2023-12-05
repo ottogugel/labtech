@@ -1,12 +1,11 @@
 ## Projeto
 A aplicação para um laboratório onde tem os pacientes que realizam suas consultas.
 
-
 ## Stack
 
 - React Native
 - Typescript
-- Expo Bare Workflow
+- Expo
 - Tailwind CSS
 - Nativewind
 - Vector icons [https://oblador.github.io/react-native-vector-icons/]
