@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         background: "#0143A7",
         darkblue: "#082A3E",
+        oranget: "#FF5C00",
       },
       fontFamily: {
         regular: "Inter_400Regular",

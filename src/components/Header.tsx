@@ -21,11 +21,11 @@ export function Header() {
 
       <TouchableOpacity
         activeOpacity={0.7}
-        className="flex flex-row h-16 border bg-black border-white rounded-2xl items-center justify-evenly w-72 mb-8"
+        className="flex flex-row h-16 border bg-oranget border-white rounded-2xl items-center justify-evenly w-72 mb-9"
         onPress={() => navigate("home")}
       >
         <Feather name="chevrons-right" color={colors.white} size={32} />
-        <Text className="text-white font-semibold text-base text-center uppercase">
+        <Text className="text-white font-semibold text-base uppercase">
           Getting Started
         </Text>
       </TouchableOpacity>

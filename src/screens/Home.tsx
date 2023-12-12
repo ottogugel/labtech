@@ -8,13 +8,17 @@ import {
 } from "@expo/vector-icons";
 import colors from "tailwindcss/colors";
 import { Button } from "../components/Button";
+import { Carousel } from "../components/Carousel";
 
 export function Home() {
   return (
     <View className="flex-1 bg-background items-center">
-      <View className="px-8 pt-16 items-center mb-16">
+      <View className="px-9 pt-16 items-center mb-16">
         <Logo />
       </View>
+
+      <Carousel />
+
       <Button
         text="Find a location"
         icon={<Feather name="map" color={colors.white} size={28} />}
