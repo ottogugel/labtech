@@ -5,6 +5,7 @@ import { Pressable, Text, PressableProps } from "react-native";
 type ButtonProps = PressableProps & LinkProps<string> & {
   children: ReactNode;
   href: string;
+  color: string;
 }
 
 type ButtonTextProps = {
@@ -15,11 +16,11 @@ type ButtonIconProps = {
   children: ReactNode;
 };
 
-function Button({ children, href, ...rest }: ButtonProps) {
+function Button({ children, href, color, ...rest }: ButtonProps) {
   return (
     <Link href={href} asChild>
       <Pressable
-        className="h-12 w-80 ml-7 mb-4 bg-blue-600 rounded-md flex-row justify-center items-center"
+        className={`h-12 w-80 ml-7 mb-4 ${color} rounded-md flex-row justify-center items-center`}
         {...rest}
       >
         {children}

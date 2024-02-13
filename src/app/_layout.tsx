@@ -8,7 +8,7 @@ import {
   Inter_700Bold,
 } from "@expo-google-fonts/inter";
 import { Slot } from "expo-router";
-import { SafeAreaView, StatusBar } from "react-native";
+import { StatusBar, View } from "react-native";
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -23,10 +23,13 @@ export default function Layout() {
   }
 
   return (
-    <SafeAreaView className="bg-bluet">
-      <StatusBar barStyle="light-content" translucent backgroundColor="transparent" />
-      <Header />
+    <View>
+      <StatusBar
+        barStyle="light-content"
+        translucent
+        backgroundColor="transparent"
+      />
       <Slot />
-    </SafeAreaView>
+    </View>
   );
 }
