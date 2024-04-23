@@ -1,6 +1,10 @@
+import Call from "@/components/call";
 import { Header } from "@/components/header";
-import { Entypo } from "@expo/vector-icons";
-import { Text, TouchableOpacity, View } from "react-native";
+import Maps from "@/components/maps";
+import Schedule from "@/components/schedule";
+import { Feather, Foundation } from "@expo/vector-icons";
+import { Link } from "expo-router";
+import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { white } from "tailwindcss/colors";
 
 export default function Location() {
@@ -9,88 +13,92 @@ export default function Location() {
       <View>
         <Header backButton />
       </View>
-      <View className="w-80 h-20 left-8 rounded-lg bg-gray-100">
-        <Text className="text-bluet font-bold text-lg left-3 top-1">Local</Text>
-        <Text className="left-3">Find the nearest ones</Text>
+      <View className="w-80 h-20 left-8 rounded-lg bg-gray-100 absolute mt-20 flex-row justify-between items-center shadow-xl">
+        <View>
+          <Text className="text-bluet font-bold text-lg left-5">Local</Text>
+          <Text className="left-5">Find the nearest ones</Text>
+        </View>
+        <View className="right-20">
+          <Text className="text-bluet font-bold text-lg">Filter</Text>
+          <Text>Input</Text>
+        </View>
       </View>
 
-      <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
-        <Text className="text-bluet font-bold text-lg left-3 top-1">
-          Center
-        </Text>
-        <Text className="left-3">26 Huston Street, Newton City</Text>
-        <View className="flex flex-row gap-3 items-center justify-end p-6">
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-900">Maps</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-400">Schedule</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-500">Call</Text>
-          </TouchableOpacity>
+      <ScrollView
+        className="mt-16 space-y-2"
+        showsVerticalScrollIndicator={true}
+      >
+        <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
+          {/* TEXTO */}
+          <View>
+            <Text className="text-bluet font-bold text-lg left-28 top-1">
+              Center
+            </Text>
+            <Text className="left-28">26 Huston Street, Newton City</Text>
+          </View>
+          <View className="flex flex-row items-center justify-end p-9 left-9">
+            <Maps />
+            <Schedule />
+            <Call />
+          </View>
         </View>
-      </View>
-      <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
-        <Text className="text-bluet font-bold text-lg left-3 top-1">North</Text>
-        <Text className="left-3">26 Huston Street, Newton City</Text>
-        <View className="flex flex-row gap-3 items-center justify-end p-6">
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-900">Maps</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-400">Schedule</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-500">Call</Text>
-          </TouchableOpacity>
+        <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
+          {/* TEXTO */}
+          <View>
+            <Text className="text-bluet font-bold text-lg left-28 top-1">
+              North
+            </Text>
+            <Text className="left-28">26 Huston Street, Newton City</Text>
+          </View>
+          <View className="flex flex-row items-center justify-end p-9 left-9">
+            <Maps />
+            <Schedule />
+            <Call />
+          </View>
         </View>
-      </View>
-      <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
-        <Text className="text-bluet font-bold text-lg left-3 top-1">South</Text>
-        <Text className="left-3">26 Huston Street, Newton City</Text>
-        <View className="flex flex-row gap-3 items-center justify-end p-6">
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-900">Maps</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-400">Schedule</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-500">Call</Text>
-          </TouchableOpacity>
+        <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
+          {/* TEXTO */}
+          <View>
+            <Text className="text-bluet font-bold text-lg left-28 top-1">
+              South
+            </Text>
+            <Text className="left-28">26 Huston Street, Newton City</Text>
+          </View>
+          <View className="flex flex-row items-center justify-end p-9 left-9">
+            <Maps />
+            <Schedule />
+            <Call />
+          </View>
         </View>
-      </View>
-      <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
-        <Text className="text-bluet font-bold text-lg left-3 top-1">East</Text>
-        <Text className="left-3">26 Huston Street, Newton City</Text>
-        <View className="flex flex-row gap-3 items-center justify-end p-6">
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-900">Maps</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-400">Schedule</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-500">Call</Text>
-          </TouchableOpacity>
+        <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
+          {/* TEXTO */}
+          <View>
+            <Text className="text-bluet font-bold text-lg left-28 top-1">
+              East
+            </Text>
+            <Text className="left-28">26 Huston Street, Newton City</Text>
+          </View>
+          <View className="flex flex-row items-center justify-end p-9 left-9">
+            <Maps />
+            <Schedule />
+            <Call />
+          </View>
         </View>
-      </View>
-      <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
-        <Text className="text-bluet font-bold text-lg left-3 top-1">West</Text>
-        <Text className="left-3">26 Huston Street, Newton City</Text>
-        <View className="flex flex-row gap-3 items-center justify-end p-6">
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-900"> <Entypo name="map" size={20} color={white} /> Maps</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-400">Schedule</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text className="text-white bg-blue-500">Call</Text>
-          </TouchableOpacity>
+        <View className="w-80 h-24 left-8 rounded-lg bg-gray-100">
+          {/* TEXTO */}
+          <View>
+            <Text className="text-bluet font-bold text-lg left-28 top-1">
+              West
+            </Text>
+            <Text className="left-28">26 Huston Street, Newton City</Text>
+          </View>
+          <View className="flex flex-row items-center justify-end p-9 left-9">
+            <Maps />
+            <Schedule />
+            <Call />
+          </View>
         </View>
-      </View>
+      </ScrollView>
     </View>
   );
 }
