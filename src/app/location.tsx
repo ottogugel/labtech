@@ -1,11 +1,11 @@
 import Call from "@/components/call";
 import { Header } from "@/components/header";
+import Input from "@/components/input";
 import Maps from "@/components/maps";
 import Schedule from "@/components/schedule";
-import { Feather, Foundation } from "@expo/vector-icons";
-import { Link } from "expo-router";
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
-import { white } from "tailwindcss/colors";
+
+import { ScrollView, Text, View } from "react-native";
+import * as Animatable from "react-native-animatable";
 
 export default function Location() {
   return (
@@ -20,7 +20,7 @@ export default function Location() {
         </View>
         <View className="right-20">
           <Text className="text-bluet font-bold text-lg">Filter</Text>
-          <Text>Input</Text>
+          <Input />
         </View>
       </View>
 
