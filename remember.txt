@@ -89,3 +89,6 @@ JavaScript: Linguagem de programação utilizada no desenvolvimento.
 
 WhatsApp API: Integração para facilitar o envio dos produtos selecionados para o WhatsApp.
 
+
+carousel
+https://www.youtube.com/watch?v=ow-tU1Oo2fo

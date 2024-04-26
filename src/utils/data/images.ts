@@ -1,4 +1,4 @@
-const productData = [
+const DATA = [
   {
     id: "1",
     imageUrl:
@@ -16,4 +16,4 @@ const productData = [
   },
 ];
 
-export { productData }
+export { DATA };
