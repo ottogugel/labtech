@@ -5,7 +5,7 @@ export default function Input() {
   return (
       <TextInput
         className="border border-b text-center text-xs"
-        placeholder="Select a Region"
+        placeholder="In development..."
         placeholderTextColor={colors.gray[500]}
       />
   );

@@ -3,12 +3,12 @@ import { BackButton } from "./back-button";
 
 export function Header({backButton = false}) {
   return (
-    <View className="bg-bluet pb-20 ">
+    <View className="bg-bluet pb-24 ">
       { backButton &&
         <BackButton />
       }
       <View className="flex items-center top-12">
-        <Image source={require("../assets/logo.png")} />
+        <Image source={require("@/assets/logo.png")} />
       </View>
     </View>
   );

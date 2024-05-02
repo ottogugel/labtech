@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import Loading from "@/components/loading"
 import {
   useFonts,
