@@ -1,5 +1,6 @@
-import { Image, View } from "react-native";
+import { View } from "react-native";
 import { BackButton } from "./back-button";
+import Logo from '../assets/logo.svg'
 
 export function Header({backButton = false}) {
   return (
@@ -8,7 +9,7 @@ export function Header({backButton = false}) {
         <BackButton />
       }
       <View className="flex items-center top-12">
-        <Image source={require("@/assets/logo.png")} />
+        <Logo width={140} />
       </View>
     </View>
   );
